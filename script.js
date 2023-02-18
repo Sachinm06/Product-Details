@@ -8,9 +8,14 @@ function loginBtn(){
     window.location="home.html"
 }
 function logOut(){
+
     localStorage.removeItem("user")
     window.location="index.html"
 }
 
 userna=localStorage.getItem("user")
-d1.innerHTML=  userna
+d1.innerHTML= userna
+
+function viewItem(){
+    window.location="result.html"
+}
