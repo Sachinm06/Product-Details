@@ -98,9 +98,9 @@
   margin-top: 3rem;
   box-shadow: 0 25px 60px 20px rgba(0, 0, 0, .6);
 
-
-
 }
+
+
 
 .card-header {
   background-color: #333;
@@ -128,7 +128,7 @@
   color: rgb(156, 150, 150);
   font-weight: bold;
   margin-bottom: 1px;
- 
+
 }
 
 .form-group input {
@@ -154,6 +154,12 @@
 .vbtn {
   height: 40px;
   width: 180px;
+}
+@media (max-width:500px) {
+  .vbtn {
+   font-size: 10px!important;
+ 
+  }
 }
 
 .aitembtn:hover {
@@ -212,7 +218,7 @@
   background: #212121;
   box-shadow: 15px 15px 30px rgb(25, 25, 25),
     -15px -15px 30px rgb(25, 25, 25);
-    color: white;
+  color: white;
 }
 
 .rlog {
@@ -237,6 +243,7 @@
   align-items: center;
 
 }
-.lBtn{
+
+.lBtn {
   width: 180px;
 }
