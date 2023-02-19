@@ -18,14 +18,14 @@
     
     <div class="input-group container">
         <input type="text" class="input" id="resultId" name="resultId" placeholder="Product ID" >
-        <input onclick="searchBtn" class="button--submit" value="Search" type="button">
+        <input onclick="searchBtn()" class="button--submit" value="Search" type="button">
     </div>
 
 
 <div id="viewResult" class="rCard container w-50"></div>
 
-<div class="rlog">
-    <button class="btn btn-outline-light container">LOGOUT</button>
+<div class="rCard2 container w-50">
+    <button onclick="resultLogout()" class="btn btn-outline-light container lBtn w-25">LOGOUT</button>
 </div>
 
 </body>
