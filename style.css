@@ -153,6 +153,7 @@
 
 .vbtn {
   height: 40px;
+  width: 180px;
 }
 
 .aitembtn:hover {
@@ -237,5 +238,5 @@
 
 }
 .lBtn{
-  width: 10px;
+  width: 180px;
 }
