@@ -1,11 +1,22 @@
 function loginBtn() {
 
-    uname = usern.value
-    localStorage.setItem("user", uname)
+    usname = usern.value
+    passw=passWord.value
 
+    localStorage.setItem("user",usname)
 
-
-    window.location = "home.html"
+    if(usname in localStorage){
+      data=JSON.parse( localStorage.getItem(usname))
+      if(passw==data["password"]){
+          window.location="home.html"
+      }
+      else{
+          alert("Wrong password")
+      }
+}
+else{
+    alert("Wrong username")
+}
 }
 function logOut() {
 
@@ -57,4 +68,22 @@ function searchBtn() {
         viewResult.innerHTML =" "
         alert("Product not found")
     }
+}
+
+function register(){
+    pname=eName.value
+    username=uname.value
+    password=psw.value
+
+  accdetails={pname,username,password}
+
+  if(username in localStorage){
+      alert("Already have an account using this username")
+      window.location="index.html"
+  }
+  else{
+      localStorage.setItem(username,JSON.stringify(accdetails))
+      window.location="index.html"
+  }
+
 }

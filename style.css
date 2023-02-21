@@ -67,6 +67,10 @@
   color: #272727;
   border-radius: 5px;
 }
+.alink{
+  color: white;
+  position: relative;
+}
 
 
 
@@ -246,4 +250,11 @@
 
 .lBtn {
   width: 180px;
+}
+
+
+/* --------------------REGISTER---------------- */
+
+.regbyd{
+  background-color: #212121;
 }
